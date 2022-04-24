@@ -1,0 +1,31 @@
+﻿
+<h1> This is my first Page</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">authorId</th>
+      <th scope="col">authorName</th>
+      <th scope="col">authorBookName</th>
+    </tr>
+  </thead>
+  <tbody>
+   @foreach (MVC_Web_Application.Models.Author item in ViewBag.Author)
+		{
+			
+			<tr>
+				<td>
+					@item.authorId
+				</td>
+				<td>
+					@item.authorName
+				</td>
+				<td>
+					@item.authorBookName
+				</td>
+			</tr>
+
+		}
+    
+  </tbody>
+</table>
